@@ -51,7 +51,7 @@ int main(int argc, char* argv[]){
   for (int i = 0 ; i < 3 ; i++) {
       pthread_join(t[i], NULL);
   }
-  printf("This is seen,you are fucked!");
+  printf("This is seen,you are deadlock!");
   sem_destroy(&x);
   sem_destroy(&y);
   sem_destroy(&z);
